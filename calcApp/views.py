@@ -7,3 +7,6 @@ from flask import render_template
 def home():
     return render_template('home.html')
 
+@calcApp.route('/results', methods=['POST'])
+def results():
+    return render_template('results.html')
