@@ -4,7 +4,7 @@
 def step_impl(context):
     context.browser.get('http://www.google.co.uk')
 
-@then(u'Then I should see that the title is "Google"')
+@then(u'I should see that the title is "Google"')
 def step_impl(context):
     assert context.browser.title  == "Google"
 
